@@ -1,0 +1,28 @@
+.footer2{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    color: black;
+    background-color: #0d3834;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.footer2 p{
+    margin-top: 20px;
+    margin-right: 250px;
+    font-weight: bold;
+    font-style: italic;
+    font-size:small
+}
+
+.footer1 img{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.fundo {
+    background-color: #0d3834 !important;
+}

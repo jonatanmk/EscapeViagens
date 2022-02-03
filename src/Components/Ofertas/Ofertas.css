@@ -1,0 +1,38 @@
+.item p{
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.item h1{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.item h2{
+    
+    margin-left: 15px;
+}
+
+.item h3{
+    margin-left: 15px;
+}
+
+.item h4{
+    margin-left: 15px;
+}
+
+.item h5{
+    
+    margin-left: 15px;
+}
+
+.precoNovo {
+    color: #6dc7b7
+}
+
+.precoAnt {
+    color: red;
+    text-decoration: line-through;
+    font-size: small;
+}
