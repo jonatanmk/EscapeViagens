@@ -25,4 +25,5 @@
 
 .fundo {
     background-color: #0d3834 !important;
+    border: solid 5px #0d3834;
 }

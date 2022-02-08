@@ -6,8 +6,8 @@ export default () => {
     return (
         <>
             <header>
-                <nav className="menu">
-                    <img src={logo} />
+                <nav className="img-fluid menu">
+                    <img className="img-fluid " src={logo} />
                     <ul>
                         <li>
                             <Link to="/">

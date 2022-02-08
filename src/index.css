@@ -20,3 +20,7 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.carousel-indicators{
+    z-index: 1;
+}

@@ -4,13 +4,16 @@ import reserva from '../../Assets/img/reserva.png'
 
 export default () => {
     return (
-        <section class="container crud">
-            <div class="botao">
-                <a href="#"><img src={destino} class="img-fluid" /></a>
-            </div>
-            <div class="botao">
-                <a href="#"><img src={reserva} class="img-fluid" /></a>
-            </div>
-        </section>
+        <>
+            <section class="container crud">
+                <div class="row botao">
+                    <a href="#"><img src={destino} class="img-fluid" /></a>
+                </div>
+                <div class="row botao">
+                    <a href="#"><img src={reserva} class="img-fluid" /></a>
+                </div>
+            </section>
+        </>
+
     );
 }

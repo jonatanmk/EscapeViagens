@@ -49,3 +49,19 @@
     width: 100%;
     margin-left: 100px;
 }
+
+@media (max-width: 1058px) {
+    .menu{
+        height: 100px;
+    }
+}
+@media (max-width: 775px) {
+    .menu{
+        height: 200px;
+        
+    }
+
+    section.container {
+        padding-top: 200px;
+    }
+}
