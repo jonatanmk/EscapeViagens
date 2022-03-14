@@ -1,13 +1,11 @@
 import Crud from "../../Components/Crud/Crud";
-import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer";
 
-export default () => {
+ function Destinos() {
     return (
-        <>
-            <Header/>
+        <main>
             <Crud/>
-            <Footer/>            
-        </>
+        </main>
     );
 }
+
+export default Destinos;

@@ -5,7 +5,7 @@ import instagram from '../../Assets/img/instagram.png'
 import linkedin from '../../Assets/img/linkedin.png'
 import github from '../../Assets/img/github.png'
 
-export default () => {
+function Footer() {
     return (
         <>
             <footer class="text-center text-black">
@@ -32,7 +32,8 @@ export default () => {
                     © 2021 Jonatan Vasconcelos Soares
                 </div>
             </footer>
-
         </>
     );
 }
+
+export default Footer;

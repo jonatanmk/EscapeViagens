@@ -2,31 +2,31 @@ import { Link } from "react-router-dom";
 import './Header.css'
 import logo from '../../Assets/img/logo.png'
 
-export default () => {
+function Header() {
     return (
         <>
-            <header>
+                        <header>
                 <nav className="img-fluid menu">
                     <img className="img-fluid " src={logo} />
                     <ul>
                         <li>
                             <Link to="/">
-                                <a>Home</a>
+                                <a className="btn">Home</a>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Destinos">
-                                <a>Destinos</a>
+                                <a className="btn">Destinos</a>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Promocoes">
-                                <a>Promoções</a>
+                                <a className="btn">Promoções</a>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Contato">
-                                <a>Contato</a>
+                                <a className="btn">Contato</a>
                             </Link>
                         </li>
                     </ul>
@@ -35,3 +35,5 @@ export default () => {
         </>
     );
 }
+
+export default Header;

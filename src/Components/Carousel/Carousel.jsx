@@ -1,10 +1,11 @@
 import banner1 from '../../Assets/img/banner1.jpg'
 import banner2 from '../../Assets/img/banner2.png'
 import banner3 from '../../Assets/img/banner3.png'
+import './Carousel.css'
 
-export default () => {
+function Carousel (){
     return (
-        <section className="container">
+        <section className="carouselFull">
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -34,3 +35,5 @@ export default () => {
         </section>
     );
 }
+
+export default Carousel;

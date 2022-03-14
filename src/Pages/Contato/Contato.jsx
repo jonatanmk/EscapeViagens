@@ -1,14 +1,11 @@
-import Footer from "../../Components/Footer/Footer";
 import Formulario from "../../Components/Formulario/Formulario";
-import Header from "../../Components/Header/Header";
 
-
-export default () => {
+ function Contato() {
     return (
-        <>
-            <Header/>
+        <main>
             <Formulario/>
-            <Footer/>
-        </>
+        </main>
     );
 }
+
+export default Contato;

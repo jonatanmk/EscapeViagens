@@ -1,3 +1,8 @@
 .crud {
     height: 75vh;
 }
+
+.botao img{
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px #5d5d5d;
+}

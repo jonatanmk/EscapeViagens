@@ -1,0 +1,27 @@
+.carouselFull {
+    width: 100hv;
+}
+
+@media (max-width: 1058px) {
+    .carouselFull{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 775px) {
+    .carouselFull{
+        margin-top: 170px;
+    }
+}
+
+@media (max-width: 500px) {
+    .carouselFull{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 431px) {
+    .carouselFull{
+        margin-top: 170px;
+    }
+}

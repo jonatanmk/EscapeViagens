@@ -36,15 +36,16 @@
     padding: 6px;
     display: block;
     text-decoration: none;
-    background-color: #6dc7b7;
     color: #0d3834;
     text-align: center;
+    
 }
 
 .menu a:hover{
     background-color: #0d3834;
     color: #6dc7b7;
 }
+
 .navbar-nav{
     width: 100%;
     margin-left: 100px;
@@ -54,14 +55,31 @@
     .menu{
         height: 100px;
     }
+
+
 }
 @media (max-width: 775px) {
     .menu{
         height: 200px;
-        
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        height: 100px;             
     }
 
-    section.container {
-        padding-top: 200px;
+    .menu img{
+        display: none
     }
+
+}
+
+@media (max-width: 431px) {
+    .menu {
+        height: 200px;             
+    }
+
+
+
 }

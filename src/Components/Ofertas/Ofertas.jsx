@@ -3,44 +3,317 @@ import joaoPessoa from '../../Assets/img/joaoPessoa.jpg'
 import fozIguacu from '../../Assets/img/fozIguacu.jpg'
 import curitiba from '../../Assets/img/curitiba.jpg'
 
-export default () => {
+function Ofertas() {
     return (
-        <>
-            <section class="container">
-                <div class="item">
-                    <a href="#"><img src={joaoPessoa} /></a>
+        <div className="bodyFake">
+            <div className="container container2">
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={joaoPessoa} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <h2>Pacotes para João Pessoa (OFERTA IMPERDÍVEL!)</h2>
-                    <p id="texto">Preço por pessoa</p>
-                    <h2 class="precoNovo">R$ 1.049</h2>
-                    <h4 class="precoAnt">R$ 1.409</h4>
-                    <p id="texto">Taxas e impostos não inclusos</p>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={fozIguacu} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="container">
-                <div class="item">
-                <a href="#"><img src={fozIguacu} /></a>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={curitiba} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <h2>Pacotes para Foz do Iguaçu (OFERTA IMPERDÍVEL!)</h2>
-                    <p id="texto">Preço por pessoa</p>
-                    <h2 class="precoNovo">R$ 873</h2>
-                    <h4 class="precoAnt">R$ 1.205</h4>
-                    <p id="texto">Taxas e impostos não inclusos</p>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={joaoPessoa} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>        <section class="container">
-                <div class="item">
-                <a href="#"><img src={curitiba} /></a>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={fozIguacu} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <h2>Pacotes para Curitiba (OFERTA IMPERDÍVEL!)</h2>
-                    <p id="texto">Preço por pessoa</p>
-                    <h2 class="precoNovo">R$ 672</h2>
-                    <h4 class="precoAnt">R$ 809</h4>
-                    <p id="texto">Taxas e impostos não inclusos</p>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={curitiba} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={joaoPessoa} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="imgBx">
+                        <img src={fozIguacu} />
+                        <ul className="action">
+                            <li>
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Favoritos</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span>Meu Carrinho</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>Detalhes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content">
+                        <div className="productName">
+                            <h3>João Pessoa</h3>
+                        </div>
+                        <div className="precoAnt">
+                            <h3>R$ 1.409</h3>
+                        </div>
+                        <div className="precoNovo">
+                            <h2>R$ 1.049</h2>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     );
 }
+
+export default Ofertas;

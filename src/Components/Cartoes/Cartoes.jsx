@@ -1,11 +1,11 @@
 import './Cartoes.css';
 import cartoes from '../../Assets/img/cartoes.jpg'
 
-export default () => {
+function Cartoes() {
     return (
-        <section class="container">
+        <section>
             <div class="item">
-                <img src={cartoes}/>
+                <img src={cartoes} alt="cartoes" />
             </div>
             <div class="item">
                 <h2>Se sua vontade de viajar não é passageira,</h2>
@@ -18,3 +18,5 @@ export default () => {
         </section>
     );
 }
+
+export default Cartoes;

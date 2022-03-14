@@ -1,18 +1,13 @@
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
 import Carousel from "../../Components/Carousel/Carousel";
 import Cartoes from "../../Components/Cartoes/Cartoes";
 
-
-export default () => {
+function Home() {
     return (
-        <>
-            <Header/>
-            <main>
-                <Carousel/>
-                <Cartoes/>
-            </main>
-            <Footer/>
-        </>
+        <main>
+            <Carousel />
+            <Cartoes />
+        </main>
     );
 }
+
+export default Home;
