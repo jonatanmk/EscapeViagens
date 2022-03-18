@@ -1,0 +1,8 @@
+.carouselFull2 .fixedHeightImg > img {
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  position: relative;
+  object-fit: cover;
+}

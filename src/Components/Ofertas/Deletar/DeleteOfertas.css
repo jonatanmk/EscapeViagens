@@ -1,19 +1,12 @@
-.cont2{
-    padding-top: 75px;
-    max-width: 750px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.box{
+.modal {
     color: #fefefe;
     background-color: #6dc7b7;
-    padding: 15px;
-    border-radius: 15px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 20px;
-    width: 70vh;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 fieldset{
@@ -21,7 +14,10 @@ fieldset{
     border-radius: 8px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 20px;
-    padding: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 legend{
     float: none;
@@ -95,4 +91,4 @@ legend{
 }
 
 #submit:hover{
-background-color: #0d3834;}
+color: #6dc7b7 !important;}

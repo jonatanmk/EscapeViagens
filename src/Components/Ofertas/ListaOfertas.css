@@ -1,0 +1,90 @@
+.botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+button {
+  background-color: #0d3834;
+  width: 25vh;
+  border: none;
+  color: #fefefe;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 10px;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button i {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover i {
+  transform: translateX(2.5em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(10em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+@media (max-width: 1058px) {
+  .ajustarNav {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 775px) {
+  .ajustarNav {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ajustarNav {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 431px) {
+  .ajustarNav {
+    margin-top: 150px;
+  }
+}

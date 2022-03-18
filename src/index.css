@@ -8,8 +8,13 @@
 
 body {
     background-color: #fefefe;
+    
 }
 
 .carousel-indicators{
-    z-index: 1;
+    z-index: 0;
+}
+
+footer {
+    flex-shrink: 0;
 }

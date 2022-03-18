@@ -33,20 +33,20 @@ function Ofertas() {
         <div className="bodyFake">
             <div className="container container2">
                 {card.map(card => (
-                    <div className="card">
+                    <div className="card" key={card.id}>
                         <div className="imgBx">
                             <img src={card.linkImg} alt="foto"/>
                             <ul className="action">
                                 <li>
-                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i className="fa fa-heart" aria-hidden="true"></i>
                                     <span>Favoritos</span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                                     <span>Meu Carrinho</span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                    <i className="fa fa-eye" aria-hidden="true"></i>
                                     <span>Detalhes</span>
                                 </li>
                             </ul>
@@ -61,11 +61,11 @@ function Ofertas() {
                             <div className="precoNovo">
                                 <h2>R${card.precoNovo}</h2>
                                 <div>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star gray" aria-hidden="true"></i>
+                                    <i className="fa fa-star" aria-hidden="true"></i>
+                                    <i className="fa fa-star" aria-hidden="true"></i>
+                                    <i className="fa fa-star" aria-hidden="true"></i>
+                                    <i className="fa fa-star" aria-hidden="true"></i>
+                                    <i className="fa fa-star gray" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>

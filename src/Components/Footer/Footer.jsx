@@ -8,29 +8,30 @@ import github from '../../Assets/img/github.png'
 function Footer() {
     return (
         <>
-            <footer class="text-center text-black">
+            <footer className="text-center text-black">
                 <div className="fundo p-1 pb-0 mt-5">
-                    <section >
-                        <a className="footer1 btn" href="https://www.facebook.com/jonatan.vasconcelos" target="_blank">
-                            <img src={facebook} />
+                    <div >
+                        <a className="footer1 btn" href="https://www.facebook.com/jonatan.vasconcelos" target="_blank" rel="noreferrer">
+                            <img src={facebook} alt="Facebook" />
                         </a>
-                        <a className="footer1 btn" href="https://youtube.com/user/jonatanmk" target="_blank">
-                            <img src={youtube} />
+                        <a className="footer1 btn" href="https://youtube.com/user/jonatanmk" target="_blank" rel="noreferrer">
+                            <img src={youtube} alt="YouTube" />
                         </a>
-                        <a className="footer1 btn" href="https://www.instagram.com/jonatanvs?r=nametag" target="_blank">
-                            <img src={instagram} />
+                        <a className="footer1 btn" href="https://www.instagram.com/jonatanvs?r=nametag" target="_blank" rel="noreferrer">
+                            <img src={instagram} alt="Instagram" />
                         </a>
-                        <a className="footer1 btn" href="https://www.linkedin.com/in/jonatan-vasconcelos-08bb29171" target="_blank">
-                            <img src={linkedin} />
+                        <a className="footer1 btn" href="https://www.linkedin.com/in/jonatan-vasconcelos-08bb29171" target="_blank" rel="noreferrer">
+                            <img src={linkedin} alt="linkedin" />
                         </a>
-                        <a className="footer1 btn" href="https://github.com/jonatanmk" target="_blank">
-                            <img src={github} />
+                        <a className="footer1 btn" href="https://github.com/jonatanmk" target="_blank" rel="noreferrer">
+                            <img src={github} alt="github" />
                         </a>
-                    </section>
+                    </div>
+                    <div className=" text-center p-3">
+                        © 2021 Jonatan Vasconcelos Soares
+                    </div>
                 </div>
-                <div className="fundo text-center p-3">
-                    © 2021 Jonatan Vasconcelos Soares
-                </div>
+
             </footer>
         </>
     );

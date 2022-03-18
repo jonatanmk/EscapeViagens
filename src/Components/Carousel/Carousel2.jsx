@@ -1,8 +1,8 @@
-import './Carousel.css'
+import './Carousel2.css'
 
-function Carousel (){
+function Carousel2 (){
     return (
-        <div className="carouselFull">
+        <div className="carouselFull2">
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -37,4 +37,4 @@ function Carousel (){
     );
 }
 
-export default Carousel;
+export default Carousel2;

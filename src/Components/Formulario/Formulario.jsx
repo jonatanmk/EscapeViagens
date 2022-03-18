@@ -32,22 +32,22 @@ function Formulario () {
                             <br />
                                 <div className="inputbox inpNome">
                                     <input type="text" name="name" id="nome" className="inputUser" required ref={nome}/>
-                                    <label for="nome" className="labelInput">Nome Completo</label>
+                                    <label htmlFor="nome" className="labelInput">Nome Completo</label>
                                 </div>
                                 <br />
                                 <div className="inputbox">
                                     <input type="text" name="email" id="email" className="inputUser" required ref={email}/>
-                                    <label for="email" className="labelInput">Email</label>
+                                    <label htmlFor="email" className="labelInput">Email</label>
                                 </div>
                                 <br />
                                 <div className="inputbox">
                                     <input type="tel" name="telefone" id="telefone" className="inputUser" required ref={telefone}/>
-                                    <label for="telefone" className="labelInput">Telefone</label>
+                                    <label htmlFor="telefone" className="labelInput">Telefone</label>
                                 </div>
                                 <br /><br />
                                 <div className="inputbox">
                                     <textarea name="message" id="textarea" className="inputUser" rows="5" required ref={mensagem}></textarea>
-                                    <label for="textarea" className="labelInput">Escreva aqui...</label>
+                                    <label htmlFor="textarea" className="labelInput">Escreva aqui...</label>
                                 </div>
                                 <br />
                                 <input type="submit" name="submit" id="submit" />
