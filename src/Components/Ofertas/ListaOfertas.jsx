@@ -4,10 +4,9 @@ import ModalDelete from 'react-modal';
 import React, { useEffect, useState } from 'react';
 import apiCard from '../../apiCard';
 import AddOfertas from '../Ofertas/Cadastrar/AddOfertas'
-import AtualizarOfertas from '../Ofertas/Atualizar/AtualizarOfertas'
 import DeleteOfertas from '../Ofertas/Deletar/DeleteOfertas'
 import './ListaOfertas.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 ModalPost.setAppElement('#root')
@@ -31,17 +30,6 @@ function ListaOfertas() {
 
     function handleCloseModalPost() {
         setIsOpenPost(false);
-    }
-
-    //Modal Put
-    const [modalIsOpenPut, setIsOpenPut] = useState(false);
-
-    function handleOpenModalPut() {
-        setIsOpenPut(true);
-    }
-
-    function handleCloseModalPut() {
-        setIsOpenPut(false);
     }
 
     //Modal Delete
@@ -74,63 +62,46 @@ function ListaOfertas() {
 
     return (
         <div className="container">
-            <div className="botoes">
-                {/* Modal Post */}
-                <button className="modal-button" onClick={handleOpenModalPost}>
-                    <div className="svg-wrapper-1">
-                        <div className="svg-wrapper">
-                            <i className="fa fa-paper-plane" aria-hidden="true"></i>
+            <div className="container mt-5">
+                <div className="botoes">
+                    {/* Modal Post */}
+                    <button className="modal-button" onClick={handleOpenModalPost}>
+                        <div className="svg-wrapper-1">
+                            <div className="svg-wrapper">
+                                <i className="fa fa-paper-plane" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span>Cadastrar</span>
-                </button>
-                <ModalPost
-                    isOpen={modalIsOpenPost}
-                    onRequestClose={handleCloseModalPost}
-                    style={customStyles}
-                >
-                    <AddOfertas />
-                </ModalPost>
+                        <span>Cadastrar</span>
+                    </button>
+                    <ModalPost
+                        isOpen={modalIsOpenPost}
+                        onRequestClose={handleCloseModalPost}
+                        style={customStyles}
+                    >
+                        <AddOfertas />
+                    </ModalPost>
 
-                {/* Modal Put */}
-                <button className="modal-button" onClick={handleOpenModalPut}>
-                    <div className="svg-wrapper-1">
-                        <div className="svg-wrapper">
-                            <i className="fa fa-refresh" aria-hidden="true"></i>
+                    {/* Modal Delete */}
+                    <button className="modal-button" onClick={handleOpenModalDelete}>
+                        <div className="svg-wrapper-1">
+                            <div className="svg-wrapper">
+                                <i className="fa fa-ban" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span>Alterar</span>
-                </button>
-                <ModalPut
-                    isOpen={modalIsOpenPut}
-                    onRequestClose={handleCloseModalPut}
-                    style={customStyles}
-                >
-                    <AtualizarOfertas />
-                </ModalPut>
-
-                {/* Modal Delete */}
-                <button className="modal-button" onClick={handleOpenModalDelete}>
-                    <div className="svg-wrapper-1">
-                        <div className="svg-wrapper">
-                            <i className="fa fa-ban" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <span>Apagar</span>
-                </button>
-                <ModalDelete
-                    isOpen={modalIsOpenDelete}
-                    onRequestClose={handleCloseModalDelete}
-                    style={customStyles}
-                >
-                    <DeleteOfertas />
-                </ModalDelete>
-
+                        <span>Apagar</span>
+                    </button>
+                    <ModalDelete
+                        isOpen={modalIsOpenDelete}
+                        onRequestClose={handleCloseModalDelete}
+                        style={customStyles}
+                    >
+                        <DeleteOfertas />
+                    </ModalDelete>
+                </div>
             </div>
 
-
             {/* Lista de ofertas */}
-            <div className="mt-5 table-responsive">
+            <div className="mt-2 table-responsive">
                 <table className="table table-sm table-hover">
                     <thead>
                         <tr>
@@ -152,7 +123,7 @@ function ListaOfertas() {
                                 <td>
                                     <button>
                                         <Link to={{ pathname: `/AdmPromocoes/Atualizar/${card.id}` }}
-                                            className='btn pedidos__btn_editar'>Editar
+                                            className='btn btn-sm'>Editar
                                         </Link>
                                     </button>
                                 </td>
@@ -161,13 +132,6 @@ function ListaOfertas() {
                     </tbody>
                 </table>
             </div>
-
-
-
-
-
-
-
         </div >
     );
 }

@@ -5,8 +5,6 @@
   justify-content: space-around;
 }
 
-
-
 button {
   background-color: #0d3834;
   width: 25vh;
@@ -63,6 +61,12 @@ button:active {
   to {
     transform: translateY(-0.1em);
   }
+}
+
+.btn{
+  max-height: 25px !important;
+  max-width: 10vh !important;
+  color: #fff;
 }
 
 @media (max-width: 1058px) {

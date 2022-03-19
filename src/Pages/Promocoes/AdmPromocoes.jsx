@@ -6,7 +6,7 @@ function AdmOfertas() {
     const { user, isAuthenticated } = useAuth0()
 
     return (
-        isAuthenticated && user.sub === "google-oauth2|101310849100982124402" && (
+        isAuthenticated && user.sub === "auth0|62353e08abc5b5006f58bbc4" && (
             <main>
                 <Carousel2/>
                 <ListaOfertas />

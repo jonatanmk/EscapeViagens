@@ -1,9 +1,8 @@
 import './Cartoes.css';
-import cartoes from '../../Assets/img/cartoes.jpg'
 
 function Cartoes() {
     return (
-        <div className="Container">
+        <div className="container">
             <div>
                 <h2>Perguntas Frequentes</h2>
             </div>
