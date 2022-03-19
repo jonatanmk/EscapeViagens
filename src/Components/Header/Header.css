@@ -8,6 +8,10 @@ header .container{
     max-height: 70px;
 }
 
+.menu{
+    margin-top: -10px;
+}
+
 .menu img{
     max-height: 80px;
     float: left;
