@@ -24,7 +24,7 @@ function AddOfertas() {
 
     return (
         
-            <form onSubmit={enviarCard}>
+            <form className="modal" onSubmit={enviarCard}>
                 <input type="hidden" name="accessKey" value="5c000c14-2996-46e0-a7d6-6fe1005dbfc1" />
                 <fieldset>
                     <legend><b>Cadastrar</b></legend>

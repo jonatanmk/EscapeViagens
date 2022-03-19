@@ -1,0 +1,32 @@
+.accordion-button{
+    color: #0d3834 !important;
+    background: #6dc7b6a2 !important;
+}
+
+.accordion-body{
+    color: #0d3834 !;
+}
+
+.meio{
+    display: flex;
+    justify-items: center;
+    
+}
+.al{
+    display: flex;
+    justify-content: center;
+}
+.img1{
+    height: auto;
+    width: 90%;
+}
+
+.img2{
+    height: auto;
+    width: 90%;
+}
+
+.img3{
+    height: auto;
+    width: 90%;
+}

@@ -1,11 +1,11 @@
 import Carousel from "../../Components/Carousel/Carousel";
-import Cartoes from "../../Components/Cartoes/Cartoes";
+import BodyHome from "../../Components/BodyHome/BodyHome";
 
 function Home() {
     return (
         <main>
             <Carousel />
-            <Cartoes />
+            <BodyHome />
         </main>
     );
 }

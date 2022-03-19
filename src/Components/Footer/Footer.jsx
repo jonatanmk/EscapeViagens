@@ -27,7 +27,7 @@ function Footer() {
                             <img src={github} alt="github" />
                         </a>
                     </div>
-                    <div className=" text-center p-3">
+                    <div className="mt-4 text-center p-3">
                         © 2021 Jonatan Vasconcelos Soares
                     </div>
                 </div>

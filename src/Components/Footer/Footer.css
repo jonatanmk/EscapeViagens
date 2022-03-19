@@ -9,3 +9,43 @@
     background-color: #0d3834 !important;
     border: solid 5px #0d3834;
 }
+
+.fundo i:hover {
+    color: #6dc7b7
+}
+
+.fundo i {
+    color: #000
+}
+
+.fundo p{
+    font-size: 24px;
+}
+
+@media(max-width:520px){
+    .fundo p{
+        font-size: 20px;
+    }
+
+    
+}
+
+@media(max-width:420px){
+    .fundo p{
+        font-size: 15px;
+    }
+
+    .fundo i {
+        font-size: 2.5em
+    }
+}
+
+@media(max-width:340px){
+    .fundo p{
+        font-size: 10px;
+    }
+
+    .fundo i {
+        font-size: 1.5em
+    }
+}

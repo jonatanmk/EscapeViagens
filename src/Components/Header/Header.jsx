@@ -21,27 +21,33 @@ function Header() {
                             <div className="collapse navbar-collapse menuAj" id="navbarNav">
                                 <ul className="navbar-nav">
                                     <li className="nav-item active">
-                                        <Link to="/" className="nav-link" aria-current="page" href="/#">Home</Link>
+                                        <Link to="/" className="nav-link" aria-current="page" href="/#">
+                                        <i class="fa fa-home" aria-hidden="true"></i> Home</Link>
                                     </li>
                                     {/* <li className="nav-item">
                                         <Link to="/Destinos" className="nav-link" aria-current="page" href="/#">Destinos</Link>
                                     </li> */}
                                     <li className="nav-item">
-                                        <Link to="/Promocoes" className="nav-link " aria-current="page" href="/#">Promoções</Link>
+                                        <Link to="/Promocoes" className="nav-link " aria-current="page" href="/#">
+                                        <i class="fa fa-plane" aria-hidden="true"></i> Promoções</Link>
                                     </li>
                                     {isAuthenticated && user.sub === "auth0|62353e08abc5b5006f58bbc4" && (
                                         <li className="nav-item">
-                                            <Link to="/AdmPromocoes" className="nav-link" aria-current="page" href="/#">Administrar</Link>
+                                            <Link to="/AdmPromocoes" className="nav-link" aria-current="page" href="/#">
+                                            <i class="fa fa-cogs" aria-hidden="true"></i> Administrar</Link>
                                         </li>
                                     )}
                                     <li className="nav-item">
-                                        <Link to="/Contato" className="nav-link" aria-current="page" href="/#">Contato</Link>
+                                        <Link to="/Contato" className="nav-link" aria-current="page" href="/#">
+                                        <i class="fa fa-envelope-open" aria-hidden="true"></i> Contato</Link>
                                     </li>
                                     <li className="nav-item">
                                         {!isAuthenticated ? (
-                                            <Link to="#" className="nav-link" aria-current="page" href="/#" onClick={() => loginWithRedirect()}>Login</Link>
+                                            <Link to="#" className="nav-link" aria-current="page" href="/#" onClick={() => loginWithRedirect()}>
+                                            <i class="fa fa-sign-in" aria-hidden="true"></i> Login</Link>
                                         ) : (
-                                            <Link to="#" className="nav-link" aria-current="page" href="/#" onClick={() => logout()}>Sair</Link>
+                                            <Link to="#" className="nav-link" aria-current="page" href="/#" onClick={() => logout()}>
+                                            <i class="fa fa-sign-out" aria-hidden="true"></i> Sair</Link>
                                         )}
                                     </li>
                                 </ul>
