@@ -8,6 +8,7 @@ import AdmPromocoes from "./Pages/Promocoes/AdmPromocoes";
 import Footer from "./Components/Footer/Footer";
 import Contato from "./Pages/Contato/Contato";
 import Header from "./Components/Header/Header";
+import AtualizarOfertas from "./Components/Ofertas/Atualizar/AtualizarOfertas"
 import Error from "./Pages/Error/Error";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
@@ -25,13 +26,12 @@ ReactDOM.render(
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/Destinos" exact element={<Destinos />} />
-          <Route path="/Promocoes" exact element={<Promocoes />} />
-          <Route path="/Contato" exact element={<Contato />} />
-
-          <Route path="/AdmPromocoes" exact element={<AdmPromocoes />} />
-
-          <Route path="*" exact element={<Error />} />
+          <Route path="/Destinos" element={<Destinos />} />
+          <Route path="/Promocoes" element={<Promocoes />} />
+          <Route path="/Contato" element={<Contato />} />
+          <Route path="/AdmPromocoes" element={<AdmPromocoes />} />
+          <Route path='/AdmPromocoes/Atualizar/:id' element={<AtualizarOfertas />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>

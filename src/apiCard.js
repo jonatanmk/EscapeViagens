@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiCard = axios.create({
-    baseURL: "http://localhost:8080"
+    baseURL: "https://app-card-escape.herokuapp.com/"
 })
 
 export default apiCard;

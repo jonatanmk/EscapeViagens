@@ -7,6 +7,7 @@ import AddOfertas from '../Ofertas/Cadastrar/AddOfertas'
 import AtualizarOfertas from '../Ofertas/Atualizar/AtualizarOfertas'
 import DeleteOfertas from '../Ofertas/Deletar/DeleteOfertas'
 import './ListaOfertas.css';
+import {Link} from 'react-router-dom'
 
 
 ModalPost.setAppElement('#root')
@@ -66,13 +67,13 @@ function ListaOfertas() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: '8px',          
+            borderRadius: '8px',
             transform: 'translate(-50%, -50%)'
         }
     }
 
     return (
-        <div className="container ">
+        <div className="container">
             <div className="botoes">
                 {/* Modal Post */}
                 <button className="modal-button" onClick={handleOpenModalPost}>
@@ -148,6 +149,13 @@ function ListaOfertas() {
                                 <td>{card.linkImg}</td>
                                 <td>{card.precoAnt}</td>
                                 <td>{card.precoNovo}</td>
+                                <td>
+                                    <button>
+                                        <Link to={{ pathname: `/AdmPromocoes/Atualizar/${card.id}` }}
+                                            className='btn pedidos__btn_editar'>Editar
+                                        </Link>
+                                    </button>
+                                </td>
                             </tr>
                         ))}
                     </tbody>
